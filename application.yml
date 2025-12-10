@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: strava-api
+  server:
+    port: 8080
+  http:
+    client:
+      read-timeout: 30s
+
+strava:
+  client-id: ${STRAVA_CLIENT_ID}
+  client-secret: ${STRAVA_CLIENT_SECRET}
+  redirect-uri: http://localhost:8080/callback
